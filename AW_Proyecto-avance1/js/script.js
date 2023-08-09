@@ -23,7 +23,7 @@ cakes.forEach(Cake => {
 
     let imgCake = document.createElement("img");
     imgCake.alt = "Cake";
-    imgCake.src = "images/paquetes/" + Cake.img;
+    imgCake.src = "images/" + Cake.img;
 
     let cakeName = document.createElement("h3");
     cakeName.textContent = Cake.nombre;
@@ -42,7 +42,9 @@ cakes.forEach(Cake => {
     cakeBtt.classList.add("boton-1")
 
     let cakeDiv = document.createElement("div");
-    cakeDiv.classList.add("cake"); 
+    cakeDiv.classList.add("cake");
+    cakeDiv.classList.add("cakes-contenido")
+    cakeDiv.classList.add("boton") 
     cakeDiv.appendChild(imgCake);
     cakeDiv.appendChild(cakeName);
     cakeDiv.appendChild(cakeDesc);
