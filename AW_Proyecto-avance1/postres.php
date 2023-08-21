@@ -22,6 +22,7 @@
                     <li><a href="index.php">Inicio</a></li>
                     <li><a href="postres.php">Postres</a></li>
                     <li><a href="paquetes.php">Paquetes</a></li>
+                    <li><a href="login.php">Admin</a></li>
                 </ul>
             </nav>
         </div>

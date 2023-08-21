@@ -18,9 +18,10 @@
             </label>
             <nav class="menuBar">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="postres.php">Postres</a></li>
                     <li><a href="paquetes.php">Paquetes</a></li>
+                    <li><a href="login.php">Admin</a></li>
                     
                 </ul>
             </nav>
@@ -60,6 +61,31 @@
             para dar vida a tus ideas y convertirlas en deliciosas realidades.
         </p>
     </section>
+
+    <main class="servicioP">
+        <div class="servicioP-contenido container">
+            <h2>Servicios Temáticos</h2>
+            <div class="servicioP-grupo">
+                <div class="paquetes">
+                    <img src="images/pack1.png" alt="">
+                    <h3>Comunión</h3>
+                </div>
+                <div class="paquetes">
+                    <img src="images/pack2.png" alt="">
+                    <h3>Cumpleaños</h3>
+                </div>
+                <div class="paquetes">
+                    <img src="images/pack3.png" alt="">
+                    <h3>Bodas</h3>
+                </div>
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, porro. Placeat dolorem tempora illum vero, aut nisi
+                officia, magni cupiditate, voluptatum atque neque enim ut quia rem consequuntur voluptatibus a?
+            </p>
+            <a href="/paquetes.html" class="boton-1">info</a>
+        </div>
+    </main>
 
 
     <script src="js/script.js"></script>

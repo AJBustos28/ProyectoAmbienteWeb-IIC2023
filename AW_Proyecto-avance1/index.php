@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
     <header class="header" >
-
         <div class="menu container" >
             <a href="#" class="logo">Logo</a>
             <input type="checkbox" id="menu" />
@@ -24,6 +22,7 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="postres.php">Postres</a></li>
                     <li><a href="paquetes.php">Paquetes</a></li>
+                    <li><a href="login.php">Admin</a></li>
                     
                 </ul>
             </nav>
