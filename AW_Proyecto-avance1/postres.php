@@ -25,18 +25,6 @@
             </nav>
         </div>
         
-        <!-- Código del encabezado -->
-       <!-- <div class="special-postre">
-            <img src="images/tortaChilenaEspecial.png" alt="Torta Chilena Especial">
-            <div class="postre-info">
-                <h3>Torta Chilena Especial</h3>
-                <p>
-                    Nuestra especialidad de la casa, la "Torta Chilena Especial", es una exquisita combinación de capas de hojarasca crujiente y manjar suave y dulce. Cada bocado es una explosión de sabores que te transportará a los auténticos sabores de Chile.
-                </p>
-                <button class="boton-carrito">Añadir al carrito</button>
-            </div>
-        </div>
-    -->
         <div class="header-content">
             <div class="header-column">
                 <h2 class="header-title">Nuestra Historia</h2>
