@@ -9,7 +9,7 @@ clave VARCHAR(50) NOT NULL
 INSERT INTO Usuario(id, usuario, clave) 
 VALUES(1, 'AaronBP', 'aaron123');
 INSERT INTO Usuario(id, usuario, clave)
-VALUES(1, 'admin', 'admin');
+VALUES(2, 'admin', 'admin');
 
 CREATE TABLE Pedido (
     id INT PRIMARY KEY AUTO_INCREMENT,
