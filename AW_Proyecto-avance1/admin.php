@@ -124,7 +124,7 @@ $conn->close();
     </table>
     </div>
     <script>
-nction confirmDelete(id) {
+function confirmDelete(id) {
         if (confirm("Seguro que quieres eliminar este pedido?")) {
             window.location.href = 'admin.php?delete_id=' + id;
         }
