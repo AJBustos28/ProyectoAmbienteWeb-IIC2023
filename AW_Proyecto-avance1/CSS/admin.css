@@ -163,6 +163,47 @@ th {
   background-color: #f8f8f8;
 }
 
+edit-form {
+  background-color: #f8f8f8;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.edit-form form {
+  padding: 20px;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="number"],
+.edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-form button[type="submit"],
+.edit-form button[type="button"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #1ac404;
+  color: white;
+}
+
+.edit-form button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
 /*formulario para crear orden*/
 
 .form-container {

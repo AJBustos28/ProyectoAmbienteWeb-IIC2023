@@ -95,8 +95,8 @@ $conn->close();
                                 <input type='text' name='new_persona_orden' value='" . $row["persona_orden"] . "'>
                                 <input type='number' name='new_cantidad' value='" . $row["cantidad"] . "'>
                                 <input type='text' name='new_comentario' value='" . $row["comentario"] . "'>
-                                <button type='submit'>Save</button>
-                                <button type='button' onclick='hideEditForm(" . $row["id"] . ")'>Cancel</button>
+                                <button type='submit'>Guardar</button>
+                                <button type='button' onclick='hideEditForm(" . $row["id"] . ")'>Cancelar</button>
                             </form>
                         </td>
                     </tr>";
