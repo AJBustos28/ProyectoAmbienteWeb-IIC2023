@@ -1,147 +1,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap');
+
 body {
-  
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fcdfe0;
-  }
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav li {
-    margin: 0 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
 
-.form-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .form {
-    background-color: white;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form-input {
-    margin-bottom: 30px;
-  }
-  
-  .form-input label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form_text {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .Enviar {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .legend {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-left: 15px; 
-  }
-
-  .error-box {
-    background-color: #f8d7da; 
-    color: #721c24; 
-    border: 1px solid #f5c6cb; 
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  /*Lista ordenes*/
-  .content-box {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  font-family: 'Halant', sans-serif;
+  font-weight: bold;
+  background-color: #fcdfe0;
 }
 
-  h1 {
-            text-align: center;
-            padding: 20px;
-        }
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: auto;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .edit-form {
-            display: none;
-        }
-        .actions-cell {
-          white-space: nowrap;
-      }
-      
-      .actions-cell button {
-          margin-right: 10px;
-          padding: 5px 10px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-      }
-      
-      .actions-cell button.delete-btn {
-          background-color: #f44336;
-          color: white;
-      }
-      
-      .actions-cell button.edit-btn {
-          background-color: #2196F3;
-          color: white;
-      }
-      
-      .actions-cell button:hover {
-          opacity: 0.8;
-      }
-      
-      .edit-form {
-          display: none;
-          background-color: #f8f8f8;
-      }
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.1s;
+}
+
+nav a:hover {
+  color: #FFC0CB;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-input {
+  margin-bottom: 30px;
+}
+
+.form-input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form_text {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Enviar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.error-box {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*Lista ordenes*/
+.content-box {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.edit-form {
+  display: none;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.actions-cell button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions-cell button.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.actions-cell button.edit-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.actions-cell button:hover {
+  opacity: 0.8;
+}
+
+.edit-form {
+  display: none;
+  background-color: #f8f8f8;
+}
+
+/*formulario para crear orden*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Halant', sans-serif;
+  width: 80%;
+  max-width: 500px;
+}
+
+.form_campo {
+  margin-bottom: 20px;
+}
+
+.form_campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form_text {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #fcdfe0;
+  border-radius: 6px;
+  color: #222020;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.enviar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.boton-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #EC8B99;
+  border-radius: 6px;
+  color: #222020;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.boton-1:hover {
+  background-color: #EC8B99;
+}

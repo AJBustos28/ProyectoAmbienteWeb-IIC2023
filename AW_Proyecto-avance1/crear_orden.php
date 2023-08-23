@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/admin.css">
     <title>Pasteleria</title>
     <?php
     session_start();
@@ -17,17 +17,13 @@
 <body>
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo">Logo</a>
-            <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="images/menuBar.png" class="menu-logo" alt="">
                 <!-- <img src="images/logoKS.png" class="menu-logo" alt=""> -->
             </label>
             <nav class="menuBar">
                 <ul>
                     <li><a href="index.php">Inicio</a></li>
                     <li><a href="postres.php">Postres</a></li>
-                    <li><a href="paquetes.php">Paquetes</a></li>
                     <li><a href="login.php">Admin</a></li>
 
                 </ul>
@@ -41,7 +37,7 @@
     </header>
 
 
-    <section class="menuP-content container">
+    <section class="form-container">
 
         <div class="h_ordenes">
             <h2>Agrega la siguiente información</h2>
@@ -58,26 +54,29 @@
                     <input id="cliente" name="cliente" class="form_text" type="text" placeholder="Ingrese el nombre del cliente">
                 </div>
                 <div class="form_campo">
-                    <label for="tipo_disp">Tipo de dispositivo</label>
+                    <label for="tipo_post">Tipo de postre</label>
                     <select class="form_text" name="tipo_disp" id="tipo_disp">
-                        <option value="0">--- Seleccione un tipo de dispositivo ---</option>
-                        <option value="Laptop">Laptop</option>
-                        <option value="Celular">Celular</option>
-                        <option value="Tablet">Tablet</option>
-                        <option value="PC">PC</option>
+                        <option value="0">--- Seleccione un tipo de postre ---</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Para ocacion especial">Para ocaciones especiales</option>
                     </select>
                 </div>
                 <div class="form_campo">
-                    <label for="marca">Marca:</label>
-                    <input id="marca" name="marca" class="form_text" type="text" placeholder="Ingrese la marca del dispositivo">
+                    <label for="marca">Cantidad:</label>
+                    <input id="marca" name="marca" class="form_text" type="text" placeholder="Ingrese la cantidad que desea ordenar">
                 </div>
                 <div class="form_campo">
-                    <label for="problema">Problema:</label>
-                    <textarea class="form_text" name="problema" id="problema" placeholder="Ingrese el problema que presenta el dispositivo"></textarea>
+            <label for="fecha">Fecha:</label>
+            <input id="fecha" name="fecha" class="form_text" type="date">
+        </div>
+                <div class="form_campo">
+                    <label for="descripcion">Descripcion:</label>
+                    <textarea class="form_text" name="problema" id="problema" placeholder="Ingrese aqui informacion sobre el postre deseado"></textarea>
                 </div>
             </div>
             <div>
-                <button class="boton enviar" type="submit">Crear</button>
+                <button class="boton enviar" type="submit">Ordenar</button>
             </div>
         </form>
 

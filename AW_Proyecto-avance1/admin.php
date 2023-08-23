@@ -61,13 +61,13 @@ $conn->close();
     </ul>
   </nav>
     <div class=content-box>
-    <h1>Orders</h1>
+    <h1>Ordenes</h1>
     <table>
         <tr>
             <th>ID</th>
             <th>Tipo de postre</th>
             <th>Ordenado por</th>
-            <th>Quantity</th>
+            <th>Cantidad</th>
             <th>Comentarios</th>
             <th>Fecha de la orden</th>
             <th>Accciones</th>
