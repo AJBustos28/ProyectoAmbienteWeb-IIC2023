@@ -26,11 +26,7 @@ body {
 }
 
 .header{
-    /* background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(images/background.png); */
-    /* background-color: #FFF3E1; */
+     background-image:url(images/background.png);
     background-color: #FFC0CB;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -343,4 +339,3 @@ body {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
 }
-

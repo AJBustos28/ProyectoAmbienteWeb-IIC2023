@@ -21,7 +21,6 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="postres.php">Postres</a></li>
-                    <li><a href="paquetes.php">Paquetes</a></li>
                     <li><a href="login.php">Admin</a></li>
                     
                 </ul>

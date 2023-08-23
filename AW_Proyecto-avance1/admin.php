@@ -51,46 +51,26 @@ $conn->close();
 <html>
 <head>
     <title>View Orders</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            text-align: center;
-            padding: 20px;
-        }
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: auto;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .edit-form {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/admin.css">
 </head>
 <body>
+<nav>
+    <ul>
+      <li><a href="index.php">Inicio</a></li>
+      <li><a href="postres.php">Postres</a></li>
+    </ul>
+  </nav>
+    <div class=content-box>
     <h1>Orders</h1>
     <table>
         <tr>
             <th>ID</th>
-            <th>Type of Cake</th>
-            <th>Ordered By</th>
+            <th>Tipo de postre</th>
+            <th>Ordenado por</th>
             <th>Quantity</th>
-            <th>Comment</th>
-            <th>Creation Date</th>
-            <th>Actions</th>
+            <th>Comentarios</th>
+            <th>Fecha de la orden</th>
+            <th>Accciones</th>
         </tr>
         <?php
         if ($result->num_rows > 0) {
@@ -126,6 +106,7 @@ $conn->close();
         }
         ?>
     </table>
+    </div>
     <script>
         function showEditForm(id) {
             var editForm = document.getElementById("edit_form_" + id);
