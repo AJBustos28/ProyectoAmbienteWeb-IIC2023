@@ -11,8 +11,7 @@
 <body>
     <header class="header">
         <div class="menu container" >
-            <a href="#" class="logo">Logo</a>
-            <input type="checkbox" id="menu" />
+            <img src="images/logoKS.png" class="menu-logo" alt="">
             <label for="menu">
             <img src="images/menuBar.png" class="menu-logo" alt="">
             <!-- <img src="images/logoKS.png" class="menu-logo" alt=""> -->
@@ -158,10 +157,12 @@
                 </div>
             </div>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, porro. Placeat dolorem tempora illum vero, aut nisi
-                officia, magni cupiditate, voluptatum atque neque enim ut quia rem consequuntur voluptatibus a?
+                En Kaby Sweets, no solo creamos delicias, sino que también transformamos momentos especiales en experiencias inolvidables.
+                Nuestros servicios temáticos añaden un toque mágico a tus celebraciones, llevando la dulzura a
+                un nivel completamente nuevo.
+                Descubre cómo convertimos tus ocasiones más importantes en recuerdos que perduran.
             </p>
-            <a href="/paquetes.html" class="boton-1">info</a>
+            <a href="crear_orden.php" class="boton-1">Reserva Ya!</a>
         </div>
     </main>
 

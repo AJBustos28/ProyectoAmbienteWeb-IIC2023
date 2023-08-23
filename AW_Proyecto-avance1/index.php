@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- POR FAVOR EJECUTAR EN LIVE SERVER -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,19 @@
 </head>
 
 <body>
-    <header class="header" >
-        <div class="menu container" >
-            <a href="#" class="logo">Logo</a>
+    <header class="header">
+        <div class="menu container">
+            <img src="images/logoKS.png" class="menu-logo" alt="">
             <input type="checkbox" id="menu" />
             <label for="menu">
-            <img src="images/menuBar.png" class="menu-logo" alt="">
-            <!-- <img src="images/logoKS.png" class="menu-logo" alt=""> -->
+                <img src="images/menuBar.png" class="menu-logo" alt="">
             </label>
             <nav class="menuBar">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="postres.php">Postres</a></li>
                     <li><a href="login.php">Admin</a></li>
-                    
+
                 </ul>
             </nav>
         </div>
@@ -31,9 +31,8 @@
         <div class="menuP-content container">
             <h1>KABY SWEETS</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque architecto veritatis nisi voluptatibus
-                molestias omnis quo sequi aperiam quibusdam odit facilis quis iusto, ducimus aut corrupti incidunt
-                perspiciatis nulla! Provident?
+                Bienvenido a Kaby Sweets, donde los sueños se hornean con amor y se sirven en porciones de felicidad.
+                ¡Descubre el arte de la dulzura con nosotros!
             </p>
             <a href="crear_orden.php" class="boton-1">Ordena aquí</a>
         </div>
@@ -47,8 +46,10 @@
         <div class="cakes-contenido container">
             <h2>Tipos de Pasteles disponibles</h2>
             <p class="texto">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eos nostrum officia molestias, numquam culpa tenetur
-                dicta consequuntur sint reprehenderit accusamus beatae deserunt quo, facere voluptatem aliquid. Iste, sunt itaque.
+                Explora un festín de sabores en nuestra tienda de pastelería,
+                donde cada dulce es una obra maestra que deleita todos los sentidos.
+                Nuestra variedad de postres es una sinfonía de tentación, diseñada para satisfacer los gustos más exigentes.
+                Desde los clásicos reconfortantes hasta las creaciones más audaces, tenemos algo para cada paladar dulce:
             </p>
 
             <div class="cakes-grupo">
@@ -56,28 +57,25 @@
                 <div class="cakes">
                     <!-- <img src="images/chocoberry.png" alt=""> -->
                     <img src="images/cupCake.png" alt="">
-                    <h3>Cake lorem</h3>
+                    <h3>Cupcake Clásico</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eos nostrum officia molestias, numquam culpa tenetur
-                        dicta consequuntur sint reprehenderit accusamus beatae deserunt quo, facere voluptatem aliquid. Iste, sunt itaque.
+                        Nuestro cupcake clásico es perfecto para cualquier ocasión. Su suave textura y delicioso glaseado te transportarán a un mundo de dulzura.
                     </p>
                 </div>
                 <div class="cakes">
                     <!-- <img src="images/redVelvet.png" alt=""> -->
                     <img src="images/chocoCake.png" alt="">
-                    <h3>Cake lorem</h3>
+                    <h3>Pastel de Chocolate</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eos nostrum officia molestias, numquam culpa tenetur
-                        dicta consequuntur sint reprehenderit accusamus beatae deserunt quo, facere voluptatem aliquid. Iste, sunt itaque.
+                        Sumérgete en el placer del chocolate con nuestro pastel de chocolate. Cada rebanada es una explosión de sabor y suavidad que te hará querer más.
                     </p>
                 </div>
                 <div class="cakes">
                     <!-- <img src="images/tortaChilena.png" alt=""> -->
                     <img src="images/fruitCake.png" alt="">
-                    <h3>Cake lorem</h3>
+                    <h3>Pastel de Frutas</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eos nostrum officia molestias, numquam culpa tenetur
-                        dicta consequuntur sint reprehenderit accusamus beatae deserunt quo, facere voluptatem aliquid. Iste, sunt itaque.
+                        Nuestro pastel de frutas es una combinación perfecta de frescura y dulzura. Cada bocado te hará descubrir una explosión de sabores naturales.
                     </p>
                 </div>
             </div>
@@ -103,10 +101,12 @@
                 </div>
             </div>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, porro. Placeat dolorem tempora illum vero, aut nisi
-                officia, magni cupiditate, voluptatum atque neque enim ut quia rem consequuntur voluptatibus a?
+                En Kaby Sweets, no solo creamos delicias, sino que también transformamos momentos especiales en experiencias inolvidables.
+                Nuestros servicios temáticos añaden un toque mágico a tus celebraciones, llevando la dulzura a
+                un nivel completamente nuevo.
+                Descubre cómo convertimos tus ocasiones más importantes en recuerdos que perduran.
             </p>
-            <a href="postres.php" class="boton-1">info</a>
+            <a href="postres.php" class="boton-1">Reserva Ya!</a>
         </div>
     </main>
 
