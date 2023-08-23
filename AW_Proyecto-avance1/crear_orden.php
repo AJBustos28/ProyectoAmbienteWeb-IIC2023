@@ -50,34 +50,28 @@
             </div>
         </div>
 
-        <form class="form" action="controller/orden.php" method="post">
+        <form class="form" action="admin.php" method="post">
             <legend>Nueva Orden</legend>
             <div>
                 <div class="form_campo">
-                    <label for="cliente">Nombre del cliente:</label>
-                    <input id="cliente" name="cliente" class="form_text" type="text" placeholder="Ingrese el nombre del cliente">
+                    <label for="new_tipo_pastel">Tipo de postre:</label>
+                    <input id="new_tipo_pastel" name="new_tipo_pastel" class="form_text" type="text" placeholder="Ingrese el nombre del postre...">
                 </div>
                 <div class="form_campo">
-                    <label for="tipo_disp">Tipo de dispositivo</label>
-                    <select class="form_text" name="tipo_disp" id="tipo_disp">
-                        <option value="0">--- Seleccione un tipo de dispositivo ---</option>
-                        <option value="Laptop">Laptop</option>
-                        <option value="Celular">Celular</option>
-                        <option value="Tablet">Tablet</option>
-                        <option value="PC">PC</option>
-                    </select>
+                    <label for="new_persona_orden">Nombre del cliente:</label>
+                    <input id="new_persona_orden" name="new_persona_orden" class="form_text" type="text" placeholder="Ingrese el nombre del cliente...">
                 </div>
                 <div class="form_campo">
-                    <label for="marca">Marca:</label>
-                    <input id="marca" name="marca" class="form_text" type="text" placeholder="Ingrese la marca del dispositivo">
+                    <label for="new_cantidad">Cantidad:</label>
+                    <input id="new_cantidad" name="new_cantidad" class="form_int" type="number" placeholder="Ingrese cantidad a ordenar...">
                 </div>
                 <div class="form_campo">
-                    <label for="problema">Problema:</label>
-                    <textarea class="form_text" name="problema" id="problema" placeholder="Ingrese el problema que presenta el dispositivo"></textarea>
+                    <label for="new_comentario">Comentarios:</label>
+                    <textarea class="form_text" name="new_comentario" id="new_comentario" placeholder="Ingrese algun dato importante..."></textarea>
                 </div>
             </div>
             <div>
-                <button class="boton enviar" type="submit">Crear</button>
+                <button class="boton-1" type="submit">Crear</button>
             </div>
         </form>
 

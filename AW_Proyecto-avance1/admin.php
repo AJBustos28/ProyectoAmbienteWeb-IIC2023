@@ -39,6 +39,20 @@ if (isset($_POST['update_id'])) {
     }
 }
 
+if (isset($_POST['new_tipo_pastel'])) {
+    $newTipoPastel = $_POST['new_tipo_pastel'];
+    $newPersonaOrden = $_POST['new_persona_orden'];
+    $newCantidad = $_POST['new_cantidad'];
+    $newComentario = $_POST['new_comentario'];
+    $insertQuery = "INSERT INTO Pedido (tipo_pastel, persona_orden, cantidad, comentario) VALUES ('$newTipoPastel', '$newPersonaOrden', '$newCantidad', '$newComentario')";
+
+    if ($conn->query($insertQuery) === TRUE) {
+        header("Location: admin.php"); // Redirect to refresh the page
+    } else {
+        echo "Error creating record: " . $conn->error;
+    }
+}
+
 // Fetch data from the Pedido table
 $sql = "SELECT * FROM Pedido";
 $result = $conn->query($sql);
