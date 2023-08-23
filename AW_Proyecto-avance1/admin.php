@@ -16,12 +16,13 @@ if ($conn->connect_error) {
 // Handle delete request
 if (isset($_GET['delete_id'])) {
     $deleteId = $_GET['delete_id'];
-    $deleteQuery = "DELETE FROM Pedido WHERE id = $deleteId";
-    if ($conn->query($deleteQuery) === TRUE) {
-        header("Location: view_orders.php"); // Redirect to refresh the page
-    } else {
-        echo "Error deleting record: " . $conn->error;
-    }
+    $deleteQuery = $conn->prepare("DELETE FROM Pedido WHERE id = ?");
+    $deleteQuery->bind_param("i", $deleteId);
+    if($deleteQuery->execute()) {
+        header("Location: admin.php");
+        } else {
+            echo "Error al borrar el pedido: " . $conn->error;
+        }
 }
 
 // Handle update request
@@ -35,7 +36,7 @@ if (isset($_POST['update_id'])) {
     if ($conn->query($updateQuery) === TRUE) {
         header("Location: admin.php");
     } else {
-        echo "Error updating record: " . $conn->error;
+        echo "Error actualizando el pedido: " . $conn->error;
     }
 }
 
@@ -49,7 +50,7 @@ if (isset($_POST['new_tipo_pastel'])) {
     if ($conn->query($insertQuery) === TRUE) {
         header("Location: admin.php"); 
     } else {
-        echo "Error creating record: " . $conn->error;
+        echo "Error creando el pedido: " . $conn->error;
     }
 }
 
@@ -98,7 +99,7 @@ $conn->close();
                 echo "<td>" . $row["comentario"] . "</td>";
                 echo "<td>" . $row["fecha_creacion"] . "</td>";
                 echo "<td>
-                        <a href='view_orders.php?delete_id=" . $row["id"] . "'>Delete</a>
+                        <a href='admin.php?delete_id=" . $row["id"] . "'>Delete</a>
                         <a href='#' onclick='showEditForm(" . $row["id"] . ")'>Edit</a>
                     </td>";
                 echo "</tr>";

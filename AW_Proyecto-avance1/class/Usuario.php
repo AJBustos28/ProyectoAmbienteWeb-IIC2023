@@ -15,9 +15,8 @@ class Usuario
         $this->clave = $clave;
     }
 
-    // METODOS PARA LA BASE DE DATOS (CRUD) Create Read Update Delete
 
-    public static function getByUserName($user_name) //Ana999
+    public static function getByUserName($user_name) 
     {
         $conexion = new Conexion();
         $conexion->conectar();
@@ -44,7 +43,7 @@ class Usuario
 
     
 
-    // METODOS SET y GET
+    // METODOS DE SET y GET PARA USUARIOS
     public function getId(): int
     {
         return $this->id;
