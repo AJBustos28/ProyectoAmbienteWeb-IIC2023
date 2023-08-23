@@ -26,16 +26,19 @@ body {
 }
 
 .header{
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(/images/background.png);
+        url(images/background.png); */
+    /* background-color: #FFF3E1; */
+    background-color: #FFC0CB;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 560px;
     display: flex;
     align-items: center;
+
 
 }
 
@@ -50,7 +53,7 @@ body {
 }
 
 .logo{
-    color: #F1F1F1;
+    color: #222020;
     font-size: 25px;
     font-weight: 700;
 }
@@ -63,14 +66,14 @@ body {
 .menu .menuBar ul li a{
     font-size: 18px;
     padding: 20px;
-    color: #F1F1F1;
+    color: #222020;
     display: block;
     font-weight: 500;
     
 }
 
 .menu .menuBar ul li a:hover {
-    color: #c68791;
+    color: #ffffff;
 
 }
 
@@ -94,13 +97,13 @@ body {
 .menuP-content h1 {
     font-size: 60px;
     line-height: 70px;
-    color: #F1F1F1;
+    color: #222020;
     margin-bottom: 30px;
 }
 
 .menuP-content p {
     font-size: 16px;
-    color: gainsboro;
+    color: #222020;
     padding: 0 250px;
     margin-bottom: 25px;
 }
@@ -108,14 +111,15 @@ body {
 .boton-1 {
     display: inline-block;
     padding: 11px 35px;
-    background-color: #EC8B99;
+    background-color: #ffd900dc;
     border-radius: 6px;
-    color: #F1F1F1;
+    color: #222020;
     text-transform: uppercase;  /* Todo el texto en mayuscula */
+    margin-bottom: 20px;
 }
 
 .boton-1:hover {
-    background-color: #c68791;
+    background-color: #e2c103bb;
 }
 /*HEADER*/
 
@@ -136,7 +140,7 @@ body {
 .cakes-contenido h2 {
     font-size: 55px;
     line-height: 70px;
-    color: rgb(38, 37, 37);
+    color: #222020;
     text-transform: uppercase;
     padding: 0 250px;
     margin-bottom: 25px;
@@ -144,7 +148,7 @@ body {
 
 .texto{
     font-size: 16px;
-    color: black;
+    color: #222020;
     padding: 0 250px;
     margin-bottom: 25px;
 
@@ -174,7 +178,7 @@ body {
 }
 
 .cakes h3 {
-    color: rgb(38, 37, 37);
+    color: #222020;
     font-size: 20px;
     margin-bottom: 15px;
 
@@ -206,10 +210,11 @@ body {
 
 /* MAIN PACKAGES */
 .servicioP {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(/images/chocoberry.png);
+        url(/images/chocoberry.png); */
+    background-color: #FFC0CB;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,7 +231,7 @@ body {
 .servicioP-contenido h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #F1F1F1;
+    color: #222020;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
@@ -234,7 +239,7 @@ body {
 .servicioP-contenido p {
 
     font-size: 16px;
-    color: gainsboro;
+    color: #222020;
     padding: 0 100px;
     margin-bottom: 50px;
 
@@ -256,7 +261,7 @@ body {
 }
 
 .paquetes h3 {
-    color: #F1F1F1;
+    color: #222020;
 }
 /* MAIN PACKAGES */
 

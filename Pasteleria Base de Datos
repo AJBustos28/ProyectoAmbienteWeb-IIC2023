@@ -8,3 +8,23 @@ clave VARCHAR(50) NOT NULL
 
 INSERT INTO Usuario(id, usuario, clave) 
 VALUES(1, 'AaronBP', 'aaron123');
+
+CREATE TABLE Pedido (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    tipo_pastel VARCHAR(100) NOT NULL,
+    persona_orden VARCHAR(100) NOT NULL,
+    cantidad INT NOT NULL,
+    comentario TEXT,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES Usuario(id)
+);
+
+
+
+INSERT INTO Pedido (tipo_pastel, persona_orden, cantidad, comentario)
+VALUES ('Pastel de chocolate', 'Maria', 2, 'Sin nueces, entrega el viernes');
+INSERT INTO Pedido (tipo_pastel, persona_orden, cantidad, comentario)
+VALUES ('Pastel de caramelo', 'juan', 1, 'Sin pasas, cliente alergico');
+INSERT INTO Pedido (tipo_pastel, persona_orden, cantidad, comentario)
+VALUES ('Pastel de vainilla', 'pedro', 3, 'Relleno de caramelo');
