@@ -33,9 +33,23 @@ if (isset($_POST['update_id'])) {
     $newComentario = $_POST['new_comentario'];
     $updateQuery = "UPDATE Pedido SET tipo_pastel = '$newTipoPastel', persona_orden = '$newPersonaOrden', cantidad = '$newCantidad', comentario = '$newComentario' WHERE id = $updateId";
     if ($conn->query($updateQuery) === TRUE) {
-        header("Location: admin.php"); // Redirect to refresh the page
+        header("Location: admin.php");
     } else {
         echo "Error updating record: " . $conn->error;
+    }
+}
+
+if (isset($_POST['new_tipo_pastel'])) {
+    $newTipoPastel = $_POST['new_tipo_pastel'];
+    $newPersonaOrden = $_POST['new_persona_orden'];
+    $newCantidad = $_POST['new_cantidad'];
+    $newComentario = $_POST['new_comentario'];
+    $insertQuery = "INSERT INTO Pedido (tipo_pastel, persona_orden, cantidad, comentario) VALUES ('$newTipoPastel', '$newPersonaOrden', '$newCantidad', '$newComentario')";
+
+    if ($conn->query($insertQuery) === TRUE) {
+        header("Location: admin.php"); 
+    } else {
+        echo "Error creating record: " . $conn->error;
     }
 }
 
@@ -62,6 +76,7 @@ $conn->close();
   </nav>
     <div class=content-box>
     <h1>Ordenes</h1>
+    <a href="crear_orden.php" class="boton-1">Crear orden de postre</a>
     <table>
         <tr>
             <th>ID</th>

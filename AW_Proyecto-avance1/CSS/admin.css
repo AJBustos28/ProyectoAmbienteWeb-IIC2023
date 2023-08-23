@@ -261,7 +261,7 @@ edit-form {
   border-radius: 5px;
 }
 
-.boton-1 {
+/* .boton-1 {
   display: inline-block;
   padding: 11px 35px;
   background-color: #EC8B99;
@@ -273,4 +273,19 @@ edit-form {
 
 .boton-1:hover {
   background-color: #EC8B99;
+} */
+.boton-1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 35px;
+  background-color: #ffd900dc;
+  border-radius: 6px;
+  color: #222020;
+  text-transform: uppercase;  /* Todo el texto en mayuscula */
+  margin-bottom: 20px;
+}
+
+.boton-1:hover {
+  background-color: #e2c103bb;
 }

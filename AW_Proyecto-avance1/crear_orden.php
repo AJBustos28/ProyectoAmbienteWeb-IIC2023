@@ -46,37 +46,28 @@
             </div>
         </div>
 
-        <form class="form" action="controller/orden.php" method="post">
+        <form class="form" action="admin.php" method="post">
             <legend>Nueva Orden</legend>
             <div>
                 <div class="form_campo">
-                    <label for="cliente">Nombre del cliente:</label>
-                    <input id="cliente" name="cliente" class="form_text" type="text" placeholder="Ingrese el nombre del cliente">
+                    <label for="new_tipo_pastel">Tipo de postre:</label>
+                    <input id="new_tipo_pastel" name="new_tipo_pastel" class="form_text" type="text" placeholder="Ingrese el nombre del postre...">
                 </div>
                 <div class="form_campo">
-                    <label for="tipo_post">Tipo de postre</label>
-                    <select class="form_text" name="tipo_disp" id="tipo_disp">
-                        <option value="0">--- Seleccione un tipo de postre ---</option>
-                        <option value="Chocolate">Chocolate</option>
-                        <option value="Vainilla">Vainilla</option>
-                        <option value="Para ocacion especial">Para ocaciones especiales</option>
-                    </select>
+                    <label for="new_persona_orden">Nombre del cliente:</label>
+                    <input id="new_persona_orden" name="new_persona_orden" class="form_text" type="text" placeholder="Ingrese el nombre del cliente...">
                 </div>
                 <div class="form_campo">
-                    <label for="marca">Cantidad:</label>
-                    <input id="marca" name="marca" class="form_text" type="text" placeholder="Ingrese la cantidad que desea ordenar">
+                    <label for="new_cantidad">Cantidad:</label>
+                    <input id="new_cantidad" name="new_cantidad" class="form_int" type="number" placeholder="Ingrese cantidad a ordenar...">
                 </div>
                 <div class="form_campo">
-            <label for="fecha">Fecha:</label>
-            <input id="fecha" name="fecha" class="form_text" type="date">
-        </div>
-                <div class="form_campo">
-                    <label for="descripcion">Descripcion:</label>
-                    <textarea class="form_text" name="problema" id="problema" placeholder="Ingrese aqui informacion sobre el postre deseado"></textarea>
+                    <label for="new_comentario">Comentarios:</label>
+                    <textarea class="form_text" name="new_comentario" id="new_comentario" placeholder="Ingrese algun dato importante..."></textarea>
                 </div>
             </div>
             <div>
-                <button class="boton enviar" type="submit">Ordenar</button>
+                <button class="boton-1" type="submit">Crear</button>
             </div>
         </form>
 
