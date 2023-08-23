@@ -99,9 +99,9 @@ $conn->close();
                 echo "<td>" . $row["comentario"] . "</td>";
                 echo "<td>" . $row["fecha_creacion"] . "</td>";
                 echo "<td>
-                        <a href='admin.php?delete_id=" . $row["id"] . "'>Delete</a>
-                        <a href='#' onclick='showEditForm(" . $row["id"] . ")'>Edit</a>
-                    </td>";
+        <a href='javascript:void(0)' onclick='confirmDelete(" . $row["id"] . ")'>Delete</a>
+        <a href='#' onclick='showEditForm(" . $row["id"] . ")'>Edit</a>
+    </td>";
                 echo "</tr>";
                 echo "<tr class='edit-form' id='edit_form_" . $row["id"] . "'>
                         <td colspan='7'>
@@ -124,6 +124,12 @@ $conn->close();
     </table>
     </div>
     <script>
+nction confirmDelete(id) {
+        if (confirm("Seguro que quieres eliminar este pedido?")) {
+            window.location.href = 'admin.php?delete_id=' + id;
+        }
+    }
+        
         function showEditForm(id) {
             var editForm = document.getElementById("edit_form_" + id);
             editForm.style.display = "table-row";
