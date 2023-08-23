@@ -81,16 +81,16 @@ $conn->close();
     </style>
 </head>
 <body>
-    <h1>Orders</h1>
+    <h1>Ordenes</h1>
     <table>
         <tr>
             <th>ID</th>
-            <th>Type of Cake</th>
-            <th>Ordered By</th>
-            <th>Quantity</th>
-            <th>Comment</th>
-            <th>Creation Date</th>
-            <th>Actions</th>
+            <th>Tipo de queque</th>
+            <th>Nombre del cliente</th>
+            <th>Cantidad</th>
+            <th>Comentarios</th>
+            <th>Datos de solicitud</th>
+            <th>Ejecutables</th>
         </tr>
         <?php
         if ($result->num_rows > 0) {
