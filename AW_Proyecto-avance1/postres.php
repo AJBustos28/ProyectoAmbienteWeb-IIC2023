@@ -75,7 +75,6 @@
                         <p>
                             Nuestro cupcake clásico es perfecto para cualquier ocasión. Su suave textura y delicioso glaseado te transportarán a un mundo de dulzura.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                     </div>
                     <div class="cakes">
                         <img src="images/chocoCake.png" alt="Pastel de chocolate">
@@ -83,7 +82,6 @@
                         <p>
                             Sumérgete en el placer del chocolate con nuestro pastel de chocolate. Cada rebanada es una explosión de sabor y suavidad que te hará querer más.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                     </div>
                     <div class="cakes">
                         <img src="images/fruitCake.png" alt="Pastel de frutas">
@@ -91,7 +89,6 @@
                         <p>
                             Nuestro pastel de frutas es una combinación perfecta de frescura y dulzura. Cada bocado te hará descubrir una explosión de sabores naturales.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                     </div>
                     <div class="cakes">
                         <img src="images/cheesecake.png" alt="Cheesecake">
@@ -99,7 +96,6 @@
                         <p>
                             Nuestro cheesecake de fresa es una delicia irresistible. Con su base crujiente y su relleno cremoso, te hará perder la noción del tiempo.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                     </div>
                     <div class="cakes">
                         <img src="images/donut.png" alt="Donut">
@@ -107,7 +103,6 @@
                         <p>
                             Nuestros donuts glaseados son suaves y esponjosos, con un glaseado dulce que los hace irresistibles. El complemento perfecto para tu café de la mañana.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                     </div>
                     <div class="cakes">
                         <img src="images/tiramisu.png" alt="Tiramisú">
@@ -115,7 +110,6 @@
                         <p>
                             El tiramisú italiano es un postre clásico que combina capas de bizcocho empapado en café, crema de mascarpone y cacao en polvo. Una delicia indulgente que te transportará a Italia.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                     </div>
 
                     <div class="cakes">
@@ -124,7 +118,6 @@
                         <p>
                             Nuestro pie de manzana casero es un clásico reconfortante. Disfruta de la combinación de manzanas frescas y una deliciosa masa crujiente, todo coronado con un toque de canela.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                         </div>
                         <div class="cakes">
                         <img src="images/pannaCotta.png" alt="Panna Cotta">
@@ -132,7 +125,6 @@
                         <p>
                         Nuestra panna cotta de vainilla es una delicada y cremosa preparación italiana. Su suavidad y el sabor sutil de la vainilla te cautivarán desde el primer bocado.
                         </p>
-                        <button class="boton-carrito">Añadir al carrito</button>
                         </div>
                         
                 </div>
@@ -141,6 +133,7 @@
                 <p class="mensaje-postres">
                     ¿Estás listo para deleitar tu paladar con estos postres deliciosos? Permítete disfrutar de momentos dulces y sabrosos que te llenarán de felicidad. ¡Permítete el placer de los postres!
                 </p>
+                <a href="crear_orden.php" class="boton-1">Crear orden de postre</a>
             </div>
         
         
